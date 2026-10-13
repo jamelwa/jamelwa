@@ -1,0 +1,25 @@
+/* Hallmark · component: contribution graph · theme: Terminal · tone: technical
+ * Pre-emit critique: P4 H4 E4 S5 R5 V4 · motion: none
+ */
+:root {
+  color-scheme: dark;
+  --color-paper: oklch(18% 0.008 155);
+  --color-panel: oklch(22% 0.008 155);
+  --color-ink: oklch(94% 0.006 155);
+  --color-muted: oklch(74% 0.012 155);
+  --color-rule: oklch(45% 0.012 155);
+  --color-focus: oklch(96% 0.025 110);
+  --color-error: oklch(80% 0.12 25);
+  --color-empty: oklch(28% 0.01 155);
+  --color-level-1: oklch(38% 0.08 150);
+  --color-level-2: oklch(49% 0.13 150);
+  --color-level-3: oklch(63% 0.17 150);
+  --color-level-4: oklch(78% 0.18 150);
+  --font-body: "JetBrains Mono", "DejaVu Sans Mono", monospace;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --cell: 12px;
+  --cell-gap: 3px;
+}
