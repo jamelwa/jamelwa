@@ -7,14 +7,17 @@ module.exports = async function check(page, url = 'http://127.0.0.1:8766/') {
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(url);
   await page.waitForFunction(() => document.querySelector('#status').dataset.state === 'success');
-  assert.equal(await page.locator('.year').count(), snapshot.years.length);
+  const expectedYears = Array.from({ length: Number(snapshot.asOf.slice(0, 4)) - 2024 + 1 }, (_, i) => Number(snapshot.asOf.slice(0, 4)) - i);
+  assert.deepEqual(snapshot.years.map(y => y.year), expectedYears, 'Only 2024 onward, newest first');
+  assert.equal(await page.locator('.year').count(), expectedYears.length);
+  assert.equal(await page.locator('#heading-2023').count(), 0);
   assert.equal(await page.locator('.day').count(), snapshot.years.reduce((sum, y) => sum + y.days.length, 0));
   assert.equal(await page.locator('header, footer, select, input, a, .summary, .inspector').count(), 0, 'Graph only');
   assert.equal(await page.locator('#status').isHidden(), true);
-  assert.equal(await page.locator('.day[data-date="2026-12-31"]').count(), 0, 'No future count claims');
+  assert.equal(await page.locator('.day').evaluateAll((cells, asOf) => cells.every(cell => cell.dataset.date <= asOf), snapshot.asOf), true, 'No future count claims');
   for (const year of snapshot.years) {
     assert.equal(await page.locator(`#heading-${year.year} + .year-meta`).innerText(), `${year.total.toLocaleString('en-US')} contributions`);
-    const day = year.days.find(d => d.count > 0);
+    const day = year.days.find(d => d.count > 0) || year.days[0];
     const cell = page.locator(`.day[data-date="${day.date}"]`);
     await cell.click();
     assert.equal(await page.locator('#tooltip').innerText(), await cell.getAttribute('aria-label'));

@@ -1,0 +1,62 @@
+name: Refresh work contributions
+
+on:
+  schedule:
+    - cron: '17 0 * * *' # Daily, approximately 07:17 WIB.
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/refresh.yml'
+      - 'refresh.cjs'
+      - 'check.cjs'
+      - 'package*.json'
+      - 'docs/**'
+
+concurrency:
+  group: work-contributions-pages
+  cancel-in-progress: false
+
+jobs:
+  refresh-and-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: write
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --ignore-scripts
+      - run: npx playwright install --with-deps chromium
+      - name: Refresh data, check graph, and render image
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python3 -m http.server 8766 --bind 127.0.0.1 --directory docs > /tmp/contributions-server.log 2>&1 &
+          server_pid=$!
+          trap 'kill "$server_pid"' EXIT
+          curl --retry 10 --retry-connrefused --retry-delay 1 --silent --show-error --fail http://127.0.0.1:8766/ > /dev/null
+          npm run refresh
+      - name: Commit refreshed snapshot
+        run: |
+          git add docs/contributions.json docs/contributions.png
+          if ! git diff --cached --quiet; then
+            git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' commit -m 'chore: refresh work contributions'
+            git push origin HEAD:main
+          fi
+      # GITHUB_TOKEN commits do not trigger another workflow or a legacy Pages build.
+      # Deploy this freshly generated artifact explicitly in the same run.
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: docs
+      - uses: actions/deploy-pages@v4
+        id: deployment

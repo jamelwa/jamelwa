@@ -1,0 +1,11 @@
+{
+  "name": "jamelwa-profile",
+  "private": true,
+  "scripts": {
+    "refresh": "node refresh.cjs",
+    "check": "node check.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.60.0"
+  }
+}
