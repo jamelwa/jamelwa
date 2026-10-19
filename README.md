@@ -12,6 +12,8 @@ I like to build software and small tools that make everyday tasks a little easie
   <img src="https://cdn.simpleicons.org/apachekafka/777777" width="24" height="24" alt="Kafka" title="Kafka" />
 </p>
 
+I worked with clients across industries at DGTraffic. I also freelance sometimes.
+
 I’m active on my work profile, [@hungryfool-klg](https://github.com/hungryfool-klg), where I work on SSO, authorization, promotions, and services that support daily operations.
 
 [![hungryfool-klg contributions](docs/contributions.png)](https://jamelwa.github.io/jamelwa/)
