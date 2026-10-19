@@ -5,11 +5,23 @@ I like to build software and small tools that make everyday tasks a little easie
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/typescript/typescript-original.svg" width="24" height="24" alt="TypeScript" title="TypeScript" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/javascript/javascript-original.svg" width="24" height="24" alt="JavaScript" title="JavaScript" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/php/php-original.svg" width="24" height="24" alt="PHP" title="PHP" />
-  <img src="https://api.iconify.design/vscode-icons/file-type-sql.svg" width="24" height="24" alt="SQL" title="SQL" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/dotnetcore/dotnetcore-original.svg" width="24" height="24" alt=".NET" title=".NET" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" width="24" height="24" alt="Docker" title="Docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/ruby/ruby-original.svg" width="24" height="24" alt="Ruby" title="Ruby" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/go/go-original-wordmark.svg" width="24" height="24" alt="Go" title="Go" />
+  <img src="https://cdn.simpleicons.org/rust/777777" width="24" height="24" alt="Rust" title="Rust" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cplusplus/cplusplus-original.svg" width="24" height="24" alt="C++" title="C++" />
+  &nbsp; | &nbsp;
+  <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="24" height="24" alt=".NET" title=".NET" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/nodejs/nodejs-original.svg" width="24" height="24" alt="Node.js" title="Node.js" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/laravel/laravel-original.svg" width="24" height="24" alt="Laravel" title="Laravel" />
+  &nbsp; | &nbsp;
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/postgresql/postgresql-original.svg" width="24" height="24" alt="PostgreSQL" title="PostgreSQL" />
-  <img src="https://cdn.simpleicons.org/apachekafka/777777" width="24" height="24" alt="Kafka" title="Kafka" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/mongodb/mongodb-original.svg" width="24" height="24" alt="MongoDB" title="MongoDB" />
+  &nbsp; | &nbsp;
+  <img src="https://cdn.simpleicons.org/apachekafka/777777" width="24" height="24" alt="Apache Kafka" title="Apache Kafka" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/rabbitmq/rabbitmq-original.svg" width="24" height="24" alt="RabbitMQ" title="RabbitMQ" />
+  &nbsp; | &nbsp;
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" width="24" height="24" alt="Docker" title="Docker" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" width="24" height="24" alt="GitHub Actions" title="GitHub Actions" />
 </p>
 
 I worked with clients across industries at DGTraffic. I also freelance sometimes.
