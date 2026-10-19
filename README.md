@@ -1,5 +1,9 @@
 I like to build software and small tools that make everyday tasks a little easier.
 
+I worked with clients across industries at DGTraffic. I also freelance sometimes.
+
+I’m active on my work profile, [@hungryfool-klg](https://github.com/hungryfool-klg), where I work on SSO, authorization, promotions, and services that support daily operations.
+
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/csharp/csharp-original.svg" width="24" height="24" alt="C#" title="C#" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/typescript/typescript-original.svg" width="24" height="24" alt="TypeScript" title="TypeScript" />
@@ -10,7 +14,7 @@ I like to build software and small tools that make everyday tasks a little easie
   <img src="https://cdn.simpleicons.org/rust/777777" width="24" height="24" alt="Rust" title="Rust" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/cplusplus/cplusplus-original.svg" width="24" height="24" alt="C++" title="C++" />
   &nbsp; | &nbsp;
-  <img src="https://cdn.simpleicons.org/dotnet/512BD4" width="24" height="24" alt=".NET" title=".NET" />
+  <img src="https://cdn.simpleicons.org/dotnet/8B6CEF" width="24" height="24" alt=".NET" title=".NET" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/nodejs/nodejs-original.svg" width="24" height="24" alt="Node.js" title="Node.js" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/laravel/laravel-original.svg" width="24" height="24" alt="Laravel" title="Laravel" />
   &nbsp; | &nbsp;
@@ -23,9 +27,5 @@ I like to build software and small tools that make everyday tasks a little easie
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/docker/docker-original.svg" width="24" height="24" alt="Docker" title="Docker" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/githubactions/githubactions-original.svg" width="24" height="24" alt="GitHub Actions" title="GitHub Actions" />
 </p>
-
-I worked with clients across industries at DGTraffic. I also freelance sometimes.
-
-I’m active on my work profile, [@hungryfool-klg](https://github.com/hungryfool-klg), where I work on SSO, authorization, promotions, and services that support daily operations.
 
 [![hungryfool-klg contributions](docs/contributions.png)](https://jamelwa.github.io/jamelwa/)
