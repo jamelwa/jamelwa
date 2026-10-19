@@ -1,4 +1,4 @@
-I build software at work and small tools for myself.
+I like to build software and small tools that make everyday tasks a little easier.
 
 <p>
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.17.0/icons/csharp/csharp-original.svg" width="24" height="24" alt="C#" title="C#" />
